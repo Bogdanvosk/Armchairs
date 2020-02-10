@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'fonts';
+@import 'header';
+
+body {
+	font-family: $fontFamily;
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
