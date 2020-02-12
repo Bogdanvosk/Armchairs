@@ -68,27 +68,13 @@
 		}
 	}
 
-	&-btn {
-		width: 220px;
-		height: 45px;
-		box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
-		border-radius: 23px;
-		background-color:$mainColor;
-		transition: transform .5s;
 
-		&:hover {
-			transform: translateY(5px);
-			cursor: pointer;
-			background-color: rgb(63,135,160);
-		}
-
-		&_link {
-			transition: transform .5s;
-			color: #ffffff;
-			font-size: 14px;
-			font-weight: 700;
-			text-decoration: none;
-		}
+	&-btn_link {
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 700;
+		text-decoration: none;
 	}
+	
 }
 

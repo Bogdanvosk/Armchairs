@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utils';
 @import 'fonts';
 @import 'header';
 @import 'main-screen';
@@ -17,4 +18,19 @@ body {
 
 h1, h2 {
 	margin: 0;
+}
+
+.btn {
+	width: 220px;
+	height: 45px;
+	box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+	border-radius: 23px;
+	background-color:$mainColor;
+	transition: transform .5s;
+
+	&:hover {
+		transform: translateY(5px);
+		cursor: pointer;
+		background-color: rgb(63,135,160);
+	}
 }

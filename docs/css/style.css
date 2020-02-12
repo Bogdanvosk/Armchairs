@@ -1,3 +1,7 @@
+.none {
+  display: none;
+}
+
 @font-face {
   font-family: "Museo Sans";
   src: url("../fonts/MuseoSans-300.woff2") format("woff2"), url("MuseoSans-300.woff") format("woff");
@@ -99,21 +103,7 @@
   font-size: 13px;
   font-weight: 500;
 }
-.recall-btn {
-  width: 220px;
-  height: 45px;
-  box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
-  border-radius: 23px;
-  background-color: #68b0c9;
-  transition: transform 0.5s;
-}
-.recall-btn:hover {
-  transform: translateY(5px);
-  cursor: pointer;
-  background-color: #3f87a0;
-}
 .recall-btn_link {
-  transition: transform 0.5s;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -168,6 +158,107 @@
   font-weight: 300;
 }
 
+.discount {
+  position: relative;
+  background-image: url("../images/disc-bg.png");
+  background-position: center top;
+  background-size: cover;
+}
+.discount-btn {
+  margin-left: 32px;
+}
+.discount-btn_link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.discount-title {
+  padding-top: 70px;
+  width: 260px;
+  height: 125px;
+  text-align: center;
+  margin-left: auto;
+  color: #535353;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.discount-title span {
+  color: #68b0c9;
+  font-size: 24px;
+}
+.discount-form {
+  margin-left: auto;
+  margin-top: 100px;
+  width: 275px;
+  height: 200px;
+  border-radius: 23px;
+  border: 5px solid #ffffff;
+}
+.discount-form-wrapper {
+  padding-bottom: 50px;
+}
+.discount-price {
+  position: absolute;
+  top: 26%;
+  right: 46%;
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discount-price__first {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.discount-price__second {
+  padding-top: 10px;
+  color: #d04545;
+  font-size: 30px;
+  font-weight: 700;
+}
+.discount-date {
+  padding: 45px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #d35656;
+  font-weight: 700;
+}
+.discount-date-left {
+  display: block;
+  width: 84px;
+  margin-right: 15px;
+}
+.discount-date-right {
+  margin-left: 15px;
+}
+.discount-date span {
+  top: 37%;
+  left: 49%;
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  width: 17px;
+  height: 22px;
+}
+
+.arrow-circled {
+  position: absolute;
+  top: 62%;
+  right: 39%;
+}
+
 body {
   font-family: "Museo Sans", sans-serif;
 }
@@ -179,5 +270,19 @@ body {
 
 h1, h2 {
   margin: 0;
+}
+
+.btn {
+  width: 220px;
+  height: 45px;
+  box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 23px;
+  background-color: #68b0c9;
+  transition: transform 0.5s;
+}
+.btn:hover {
+  transform: translateY(5px);
+  cursor: pointer;
+  background-color: #3f87a0;
 }
 /*# sourceMappingURL=style.css.map */
