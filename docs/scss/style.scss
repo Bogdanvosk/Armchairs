@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'fonts';
 @import 'header';
+@import 'main-screen';
+@import 'benefits';
+@import 'discount';
+
 
 body {
 	font-family: $fontFamily;
@@ -9,4 +13,8 @@ body {
 .container {
 	max-width: 940px;
 	margin: 0 auto;
+}
+
+h1, h2 {
+	margin: 0;
 }

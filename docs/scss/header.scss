@@ -1,5 +1,5 @@
 .header {
-	margin-top: 20px;
+	margin: 20px 0;
 	&-wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -14,14 +14,14 @@
 
 	&__number {
 		text-decoration: none;
-		color: #5e5e5e;
+		color: $blackColor;
 		font-size: 24px;
-		line-height: 42.35px;
 		font-weight: 700;
+		margin-bottom: 10px;
 	}
 
 	&__book {
-		color: #5892a6;
-		line-height: 42.35px;
+		color: $secColor;
+		font-weight: 500;
 	}
 }
