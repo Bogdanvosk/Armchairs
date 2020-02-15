@@ -1,0 +1,33 @@
+.stats {
+	margin: 70px 0;
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item {
+		background-image: url('../images/icon-armchair.svg');
+		background-repeat: no-repeat;
+		background-position: center top;
+
+	}
+
+	&__number {
+		padding-top: 32px;
+		margin-bottom: 30px;
+		text-align: center;
+		color: #68b0c9;
+		font-size: 47px;
+		font-weight: 700;
+		line-height: 41px;
+
+	}
+
+	&__text {
+		text-align: center;
+		color:$blackColor;
+		font-size: 18px;
+		font-weight: 500;
+	}
+}

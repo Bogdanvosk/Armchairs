@@ -259,6 +259,35 @@
   right: 39%;
 }
 
+.stats {
+  margin: 70px 0;
+}
+.stats-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stats__item {
+  background-image: url("../images/icon-armchair.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.stats__number {
+  padding-top: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #68b0c9;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 41px;
+}
+.stats__text {
+  text-align: center;
+  color: #535353;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 body {
   font-family: "Museo Sans", sans-serif;
 }
