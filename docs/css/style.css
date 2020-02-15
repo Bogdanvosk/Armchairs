@@ -113,14 +113,8 @@
 .benefits {
   position: relative;
 }
-.benefits-title {
-  margin: 80px 0;
-  text-align: center;
-  color: #535353;
-  font-size: 36px;
-  font-weight: 700;
-}
 .benefits-arrow-1 {
+  margin-top: 80px;
   position: absolute;
   top: 8%;
   left: 43%;
@@ -288,6 +282,43 @@
   font-weight: 500;
 }
 
+.sertificate {
+  padding-bottom: 90px;
+  background-image: linear-gradient(to bottom, #f9fbfd 0%, #ecf3f8 100%);
+}
+.sertificate-text {
+  width: 377px;
+  color: #323232;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.sertificate-text:last-child {
+  margin: 0;
+}
+.sertificate-info {
+  display: flex;
+  justify-content: space-between;
+}
+.sertificate-conformity {
+  padding-left: 150px;
+}
+.sertificate-conformity-title {
+  width: 396px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.sertificate-conformity-title h3 {
+  color: #68b0c9;
+  font-size: 22px;
+  font-weight: 700;
+}
+.sertificate-conformity-top img {
+  margin-right: 20px;
+}
+
 body {
   font-family: "Museo Sans", sans-serif;
 }
@@ -313,5 +344,13 @@ h1, h2 {
   transform: translateY(5px);
   cursor: pointer;
   background-color: #3f87a0;
+}
+
+.title {
+  text-align: center;
+  color: #535353;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 80px 0;
 }
 /*# sourceMappingURL=style.css.map */
