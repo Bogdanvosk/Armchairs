@@ -1,0 +1,31 @@
+.advantages {
+	position: relative;
+	margin: 90px 0 70px;
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&-title {
+		color: $mainColor;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&-text {
+		width: 239px;
+
+		&-top {
+			margin-bottom: 100px;
+		}
+	}
+
+	&-desc {
+		color: #606060;
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+}

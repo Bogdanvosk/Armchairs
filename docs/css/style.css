@@ -2,6 +2,14 @@
   display: none;
 }
 
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
 @font-face {
   font-family: "Museo Sans";
   src: url("../fonts/MuseoSans-300.woff2") format("woff2"), url("MuseoSans-300.woff") format("woff");
@@ -46,7 +54,7 @@
 }
 
 .main-screen {
-  background-image: url("../images/main-bg.png");
+  background-image: url("../images/bg/main-bg.png");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,7 +162,7 @@
 
 .discount {
   position: relative;
-  background-image: url("../images/disc-bg.png");
+  background-image: url("../images/bg/disc-bg.png");
   background-position: center top;
   background-size: cover;
 }
@@ -262,7 +270,7 @@
   align-items: center;
 }
 .stats__item {
-  background-image: url("../images/icon-armchair.svg");
+  background-image: url("../images/icons/icon-armchair.svg");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -319,6 +327,32 @@
   margin-right: 20px;
 }
 
+.advantages {
+  position: relative;
+  margin: 90px 0 70px;
+}
+.advantages-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.advantages-title {
+  color: #68b0c9;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.advantages-text {
+  width: 239px;
+}
+.advantages-text-top {
+  margin-bottom: 100px;
+}
+.advantages-desc {
+  color: #606060;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 body {
   font-family: "Museo Sans", sans-serif;
 }
@@ -356,5 +390,26 @@ h1, h2 {
   font-size: 36px;
   font-weight: 700;
   padding: 80px 0;
+}
+
+.line-1 {
+  position: absolute;
+  top: 1%;
+  left: 36%;
+}
+.line-2 {
+  position: absolute;
+  top: 44%;
+  left: 36%;
+}
+.line-3 {
+  position: absolute;
+  top: -10%;
+  right: 37%;
+}
+.line-4 {
+  top: 70%;
+  right: 36%;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

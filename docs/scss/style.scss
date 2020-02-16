@@ -7,6 +7,7 @@
 @import 'discount';
 @import 'stats';
 @import 'sertificate';
+@import 'advantages';
 
 
 body {
@@ -47,5 +48,35 @@ h1, h2 {
 	font-size: 36px;
 	font-weight: 700;
 	padding: 80px 0;
+}
+
+.line {
+
+	&-1 {
+		position: absolute;
+
+		top: 1%;
+		left: 36%;
+	}
+
+	&-2 {
+		position: absolute;
+		top: 44%;
+		left: 36%;
+	}
+
+	&-3 {
+		position: absolute;
+		top: -10%;
+		right: 37%;
+	} 
+
+	&-4 {
+		top: 70%;
+		right: 36%;
+		position: absolute;
+
+	} 
 
 }
+
