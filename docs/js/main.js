@@ -33,6 +33,32 @@ $(function(){
 			}
 		})
 
+		$('.advantages-column').each(function () {
+			var elPos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (elPos < topOfWindow + 500) {
+				$(this).addClass('fadeInLeft');
+			}
+		})
+
+
+		$('.advantages-column-lines').each(function () {
+			var elPos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (elPos < topOfWindow + 500) {
+				$(this).addClass('fadeInLeft');
+			}
+		})
+
+		$('.deliver-wrapper').each(function () {
+			var elPos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (elPos < topOfWindow + 500) {
+				$(this).addClass('fadeInLeft');
+			}
+		})
+
+
 
 	})
 

@@ -8,7 +8,7 @@
 @import 'stats';
 @import 'sertificate';
 @import 'advantages';
-
+@import 'deliver';
 
 body {
 	font-family: $fontFamily;
@@ -78,5 +78,16 @@ h1, h2 {
 
 	} 
 
+}
+
+.price-circle {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 

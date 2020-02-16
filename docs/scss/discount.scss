@@ -47,16 +47,9 @@
 	}
 
 	&-price {
-		position: absolute;
 		top: 26%;
 		right: 46%;
-		width: 150px;
-		height: 150px;
-		background-color: #ffffff;
-		border-radius: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+
 
 		&__first {
 			padding-top: 40px;
