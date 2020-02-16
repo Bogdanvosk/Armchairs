@@ -116,17 +116,17 @@
 .benefits-arrow-1 {
   margin-top: 80px;
   position: absolute;
-  top: 8%;
+  top: -40%;
   left: 43%;
 }
 .benefits-arrow-2 {
   position: absolute;
-  top: 38%;
+  top: -9%;
   left: 39%;
 }
 .benefits-arrow-3 {
   position: absolute;
-  top: 73%;
+  top: 0;
   right: 43%;
 }
 .benefits-item {
@@ -326,6 +326,10 @@ body {
 .container {
   max-width: 940px;
   margin: 0 auto;
+}
+
+.animated {
+  opacity: 0;
 }
 
 h1, h2 {
