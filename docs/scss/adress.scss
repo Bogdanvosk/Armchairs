@@ -1,0 +1,49 @@
+.adress {
+  background-color: #ecf3f8;
+
+  &-btn {
+    & a {
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-choice {
+    color: blackColor;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  &-right {
+    text-align: center;
+    margin: 80px 0;
+
+  }
+
+  &-left {
+    margin: 50px 0;
+  }
+
+  &-title {
+    margin-bottom: 50px;
+    width: 271px;
+    color: $mainColor;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &-subtitle {
+    margin: 20px 0;
+    color: $blackColor;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

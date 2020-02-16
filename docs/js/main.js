@@ -37,7 +37,7 @@ $(function(){
 			var elPos = $(this).offset().top;
 			var topOfWindow = $(window).scrollTop();
 			if (elPos < topOfWindow + 500) {
-				$(this).addClass('jackInTheBox');
+				$(this).addClass('fadeInRight');
 			}
 		})
 
@@ -63,6 +63,14 @@ $(function(){
 			var topOfWindow = $(window).scrollTop();
 			if (elPos < topOfWindow + 500) {
 				$(this).addClass('jackInTheBox');
+			}
+		})
+
+		$('.adress-wrapper').each(function () {
+			var elPos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (elPos < topOfWindow + 500) {
+				$(this).addClass('fadeInRight');
 			}
 		})
 
