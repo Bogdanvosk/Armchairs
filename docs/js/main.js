@@ -29,7 +29,7 @@ $(function(){
 			var elPos = $(this).offset().top;
 			var topOfWindow = $(window).scrollTop();
 			if (elPos < topOfWindow + 500) {
-				$(this).addClass('fadeInLeft');
+				$(this).addClass('jackInTheBox');
 			}
 		})
 
@@ -37,7 +37,7 @@ $(function(){
 			var elPos = $(this).offset().top;
 			var topOfWindow = $(window).scrollTop();
 			if (elPos < topOfWindow + 500) {
-				$(this).addClass('fadeInLeft');
+				$(this).addClass('jackInTheBox');
 			}
 		})
 
@@ -46,7 +46,7 @@ $(function(){
 			var elPos = $(this).offset().top;
 			var topOfWindow = $(window).scrollTop();
 			if (elPos < topOfWindow + 500) {
-				$(this).addClass('fadeInLeft');
+				$(this).addClass('jackInTheBox');
 			}
 		})
 
@@ -55,6 +55,14 @@ $(function(){
 			var topOfWindow = $(window).scrollTop();
 			if (elPos < topOfWindow + 500) {
 				$(this).addClass('fadeInLeft');
+			}
+		})
+
+		$('.difference').each(function () {
+			var elPos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (elPos < topOfWindow + 500) {
+				$(this).addClass('jackInTheBox');
 			}
 		})
 
