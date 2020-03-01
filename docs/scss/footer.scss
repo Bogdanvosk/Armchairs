@@ -1,3 +1,5 @@
+$mainColor: #68b0c9;
+
 .footer {
   &-wrapper {
     display: flex;
@@ -11,10 +13,14 @@
 
   &-privacy {
     & a {
+      transition: color 0.4s;
       color: $mainColor;
       font-weight: 300;
+
+      &:hover {
+        color: darken($mainColor, 30%);
+      }
     }
-   
   }
 
   &-phone {
@@ -27,6 +33,5 @@
       color: #505050;
       line-height: 1.5;
     }
-
   }
 }
