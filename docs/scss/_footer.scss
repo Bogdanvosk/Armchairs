@@ -17,9 +17,6 @@ $mainColor: #68b0c9;
       color: $mainColor;
       font-weight: 300;
 
-      &:hover {
-        color: darken($mainColor, 30%);
-      }
     }
   }
 

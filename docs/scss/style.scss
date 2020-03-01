@@ -1,96 +1,98 @@
-@import 'variables';
-@import 'utils';
-@import 'fonts';
-@import 'header';
-@import 'main-screen';
-@import 'benefits';
-@import 'discount';
-@import 'stats';
-@import 'sertificate';
-@import 'advantages';
-@import 'deliver';
-@import 'difference';
-@import 'adress';
-@import 'footer';
+@import "_variables";
+@import "_utils";
+@import "_fonts";
+@import "_header";
+@import "_main-screen";
+@import "_benefits";
+@import "_discount";
+@import "_stats";
+@import "_sertificate";
+@import "_advantages";
+@import "_deliver";
+@import "_difference";
+@import "_adress";
+@import '_modals';
+@import "_footer";
 
 body {
-	font-family: $fontFamily;
+  font-family: $fontFamily;
 }
 
 .container {
-	max-width: 940px;
-	margin: 0 auto;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .animated {
-	opacity: 0;
+  opacity: 0;
 }
 
-h1, h2 {
-	margin: 0;
+h1,
+h2 {
+  margin: 0;
 }
 
 .btn {
-	width: 220px;
-	height: 45px;
-	box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
-	border-radius: 23px;
-	background-color:$mainColor;
-	transition: transform .5s;
+  width: 220px;
+  height: 45px;
+  box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 23px;
+  background-color: $mainColor;
+  transition: transform 0.5s;
 
-	&:hover {
-		transform: translateY(5px);
-		cursor: pointer;
-		background-color: rgb(63,135,160);
-	}
+  &:hover {
+    transform: translateY(5px);
+    cursor: pointer;
+    background-color: rgb(63, 135, 160);
+  }
 }
 
 .title {
-	text-align: center;
-	color: $blackColor;
-	font-size: 36px;
-	font-weight: 700;
-	padding: 80px 0;
+  text-align: center;
+  color: $blackColor;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 80px 0;
 }
 
 .line {
+  &-1 {
+    position: absolute;
 
-	&-1 {
-		position: absolute;
+    top: 1%;
+    left: 36%;
+  }
 
-		top: 1%;
-		left: 36%;
-	}
+  &-2 {
+    position: absolute;
+    top: 44%;
+    left: 36%;
+  }
 
-	&-2 {
-		position: absolute;
-		top: 44%;
-		left: 36%;
-	}
+  &-3 {
+    position: absolute;
+    top: -10%;
+    right: 37%;
+  }
 
-	&-3 {
-		position: absolute;
-		top: -10%;
-		right: 37%;
-	} 
-
-	&-4 {
-		top: 70%;
-		right: 36%;
-		position: absolute;
-
-	} 
-
+  &-4 {
+    top: 70%;
+    right: 36%;
+    position: absolute;
+  }
 }
 
 .price-circle {
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	background-color: #ffffff;
-	border-radius: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
+
 

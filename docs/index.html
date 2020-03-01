@@ -8,41 +8,23 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<title>Детские автокресла</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/preloader.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
 
-	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-		Launch demo modal
-	</button>
-
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					...
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Save changes</button>
-				</div>
-			</div>
+	<!-- Preloader -->
+	<div id='page-preloader' class="preloader">
+		<div class="loader">
 		</div>
 	</div>
+	<!-- //Preloader -->
 
 
-	<header class="header ">
+	<!-- Header -->
+	<header class="header">
 		<div class="container">
 			<div class="header-wrapper">
 				<div class="header__logo">
@@ -59,7 +41,41 @@
 			</div>
 		</div>
 	</header>
+	<!-- // Header -->
+	
 
+
+	<!-- The Modals -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close" id="close">X</span>
+			<h4 class="close__title">Обратный звонок</h4>
+			<p class="close__subtitle">Оставляйте номер, мы вам перезвоним!</p>
+			<form class="close__form">
+				<input type="text" class="close__form-tel" placeholder='Ваш Телефон'>
+				<a href="#1" class="close__form-btn" id='closeFormBtn'>
+					Перезвоните мне
+				</a>
+			</form>
+		</div>
+
+
+	</div>
+
+	<div class="modal-response" id='myModalResponse'>
+
+		<div class="modal-response-content">
+			<span class="close" id="closeResponse">X</span>
+			<h4 class="close__title">Обратный звонок</h4>
+			<p class="close__subtitle">Наш менеджер свяжется с вами
+				в ближайшее время!</p>
+		</div>
+	</div>
+	<!-- // The Modals -->
+
+	<!-- Main -->
 	<main class="main ">
 
 		<section class="main-screen">
@@ -84,8 +100,8 @@
 								<input class='recall-number' type="tel" placeholder="Ваш Телефон">
 							</form>
 
-							<button class="recall-btn btn">
-								<a href="#" class="recall-btn_link">
+							<button class="recall-btn btn" id="myBtn">
+								<a href="#1" class="recall-btn_link">
 									ПЕРЕЗВОНИТЕ МНЕ
 								</a>
 							</button>
@@ -97,8 +113,9 @@
 			</div>
 		</section>
 	</main>
+	<!-- // Main -->
 
-
+	<!-- Benefits -->
 	<section class="benefits ">
 		<div class="container">
 			<div class="benefits-wrapper">
@@ -118,7 +135,8 @@
 								свободным
 							</h3>
 							<div class="benefits-text">
-								Бескаркаяное автокресло «Смайл» можно не снимать во время перевозки взрослого или груза. Кресло весит
+								Бескаркаяное автокресло «Смайл» можно не снимать во время перевозки взрослого или груза. Кресло
+								весит
 								всего 700 грамм и установить его можно в любой автомобиль.
 							</div>
 						</div>
@@ -139,7 +157,8 @@
 								групп детей
 							</h3>
 							<div class="benefits-text">
-								Автокресло рассчитано на возраст от 1 года до 12 лет (от 9 кг до 36 кг) Имеет пятиточную фиксацию
+								Автокресло рассчитано на возраст от 1 года до 12 лет (от 9 кг до 36 кг) Имеет пятиточную
+								фиксацию
 								ребенка, как в гоночном автомобиле.
 							</div>
 						</div>
@@ -154,7 +173,8 @@
 								производитель
 							</h3>
 							<div class="benefits-text">
-								Автокресла производят в г. Георгиевске (Ставропольский край), соответсвуют нормам ГИБДД и разрешены к
+								Автокресла производят в г. Георгиевске (Ставропольский край), соответсвуют нормам ГИБДД и
+								разрешены к
 								использованию по всей территории РФ, о чем говорит сертификат соответствия.
 							</div>
 						</div>
@@ -170,7 +190,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Benefits -->
 
+	<!-- Discount -->
 	<section class="discount ">
 		<div class="container">
 			<div class="discount-wrapper animated">
@@ -219,7 +241,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Discount -->
 
+	<!-- Stats -->
 	<section class="stats animated ">
 		<div class="container">
 			<div class="stats-wrapper">
@@ -249,7 +273,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Stats -->
 
+	<!-- Sertificate -->
 	<section class="sertificate animated ">
 		<div class="container">
 			<div class="sertificate-wrapper">
@@ -294,7 +320,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Sertificate -->
 
+	<!-- Advantages -->
 	<section class="advantages ">
 		<div class="container">
 			<div class="advantages-wrapper">
@@ -308,7 +336,8 @@
 						</div>
 						<div class="advantages-text-bottom">
 							<h4 class="advantages-title">Удобная установка</h4>
-							<p class="advantages-desc">Достаточно продеть штатный ремень безопасности автомобиля, через специальный
+							<p class="advantages-desc">Достаточно продеть штатный ремень безопасности автомобиля, через
+								специальный
 								карман устройства "ВИННИ" и застегнуть в замок.
 							</p>
 						</div>
@@ -338,13 +367,15 @@
 					<div class="advantages-text">
 						<div class="advantages-text-top">
 							<h4 class="advantages-title">Безопасные материалы</h4>
-							<p class="advantages-desc">При пошиве используется ткань "Оксфорд", сетка Air-mesh 3-х слойная, поролон,
+							<p class="advantages-desc">При пошиве используется ткань "Оксфорд", сетка Air-mesh 3-х слойная,
+								поролон,
 								спанбонд, халлофайбер. Все материалы экологически чистые, сертифицированы.
 							</p>
 						</div>
 						<div class="advantages-text-bottom">
 							<h4 class="advantages-title">Прочные крепления</h4>
-							<p class="advantages-desc">Устройство ВИННИ" имеет пятиточечную систему крепления. Пряжки производят из
+							<p class="advantages-desc">Устройство ВИННИ" имеет пятиточечную систему крепления. Пряжки
+								производят из
 								высокопрочных пластиков, имеющих хорошие показатели упругости.
 							</p>
 						</div>
@@ -356,7 +387,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Advantages -->
 
+	<!-- Deliver -->
 	<section class="deliver">
 		<div class="container">
 			<div class="deliver-wrapper animated">
@@ -390,7 +423,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Deliver -->
 
+	<!-- Difference -->
 	<section class="difference animated">
 		<div class="container">
 			<div class="difference-wrapper">
@@ -500,8 +535,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Difference -->
 
-
+	<!-- Adress -->
 	<section class="adress">
 		<div class="container">
 			<div class="adress-wrapper animated">
@@ -532,8 +568,10 @@
 			</div>
 		</div>
 	</section>
+	<!-- // Adress -->
 
 
+	<!-- Footer -->
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-wrapper">
@@ -547,15 +585,22 @@
 				</div>
 
 				<div class="footer-phone">
-					<a href="#">Инн 999999999</a> 
-					<a href="#">ОГРН 453453453453</a> 
+					<a href="#">Инн 999999999</a>
+					<a href="#">ОГРН 453453453453</a>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<!-- // Footer -->
 
+	<script>
+
+	</script>
+
+	<script src="js/preloader.js"></script>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
+
 </body>
 
 </html>

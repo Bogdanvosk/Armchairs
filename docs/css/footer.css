@@ -21,10 +21,6 @@
   font-weight: 300;
 }
 
-.footer-privacy a:hover {
-  color: #285d70;
-}
-
 .footer-phone {
   display: -webkit-box;
   display: -ms-flexbox;

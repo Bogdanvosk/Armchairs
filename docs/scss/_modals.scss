@@ -1,0 +1,117 @@
+// The Modal Background
+.modal {
+  
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  // Modal Content
+  &-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    height: 240px;
+    border-radius: 25px;
+  }
+
+  &-response {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 300px;
+      height: 140px;
+      border-radius: 25px;
+
+      .close__subtitle {
+        width: 180px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* The Close Button */
+.close {
+  transition: color 0.3s;
+  color: #5ea5bd;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &__form {
+    text-align: center;
+
+    &-tel {
+      margin-bottom: 30px;
+      outline: none;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 15px;
+      border: 3px solid #efefef;
+
+      &::placeholder {
+        color: #9c9c9c;
+        font-weight: 500;
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+
+    &-btn {
+      border-radius: 15px;
+      background-color: #68b0c9;
+      padding: 12px 53px;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        transform: translateY(5px);
+        cursor: pointer;
+        background-color: rgb(63, 135, 160);
+      }
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #5892a6;
+    text-align: center;
+    margin: 40px 0 15px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: #303030;
+    margin-bottom: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    color: darken(#5ea5bd, 20%);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
